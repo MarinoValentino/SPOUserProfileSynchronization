@@ -13,8 +13,10 @@ The Script need to run as SPO Admin user.
 ![Image2](images/p2.png)
 
 #### Import Modules
+
 * AzureAD
 * SharePointPnPPowerShellOnline
+
 ![Image3](images/p3.png)
 
 #### Add credentials to use in script
@@ -24,11 +26,14 @@ The Script need to run as SPO Admin user.
 ![Image5](images/p5.png)
 
 #### Edit, adjust and Publish the Runbook
+
 Adjust <TenantName> and <CredentialName>
+
 ```
 $TenantSite="https://<TenantName>.sharepoint.com"
 $cred = Get-AutomationPSCredential -Name '<CredentialName>'
 ```
+
 ![Image6](images/p6.png)
 
 #### Run the Runbook
