@@ -27,7 +27,7 @@ The Script need to run as SPO Admin user.
 
 #### Edit, adjust and Publish the Runbook
 
-Adjust <TenantName> and <CredentialName>
+Adjust *TenantName* and *CredentialName*
 
 ```
 $TenantSite="https://<TenantName>.sharepoint.com"
@@ -37,4 +37,5 @@ $cred = Get-AutomationPSCredential -Name '<CredentialName>'
 ![Image6](images/p6.png)
 
 #### Run the Runbook
-For a better reading, Changes will be logged also as Warnings
+*For a better reading, Changes will be logged also as Warnings*
+
