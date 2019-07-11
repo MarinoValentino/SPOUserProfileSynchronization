@@ -2,7 +2,7 @@ $TenantSite="https://<TenantName>.sharepoint.com"
 $cred = Get-AutomationPSCredential -Name '<CredentialName>' # Need SPO Admin
 Connect-PnPOnline $TenantSite -Credentials $cred
 Connect-AzureAD -Credential $cred
-$users=Get-AzureADUser | ? {$_.ObjectType -eq 'User' -and $_.DirSyncEnabled}
+$users=Get-AzureADUser -All $true | ? {$_.ObjectType -eq 'User' -and $_.DirSyncEnabled}
 $usercount = $users.Count
 Write-Output "TOTAL USER TO CHECK:$usercount"
 Foreach ($user in $users)
