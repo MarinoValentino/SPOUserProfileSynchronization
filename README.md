@@ -9,7 +9,7 @@ with
 ```
 $AAD_Property = (Get-AzureADUserExtension -ObjectId $UserPrincipalName).extension_<id>_<name>
 ```
-*to quickly get the extension "id" and "name" use MS Graph, i.e. https://graph.microsoft.com/beta/Users/user@contoso.com
+*to quickly get the extension "id" and "name" use MS Graph, i.e. https://graph.microsoft.com/beta/Users/user@contoso.com*
 
 ### Prerequisites
 The Script need to run as SPO Admin user.
