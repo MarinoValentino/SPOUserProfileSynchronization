@@ -1,5 +1,5 @@
 $TenantSite="https://<TenantName>.sharepoint.com"
-$cred = Get-AutomationPSCredential -Name '<CredentialName>' # Need SPO Admin
+$cred = Get-AutomationPSCredential -Name '<CredentialName>' # Need SPO Admin Role
 Connect-PnPOnline $TenantSite -Credentials $cred
 Connect-AzureAD -Credential $cred
 $users=Get-AzureADUser -All $true | ? {$_.ObjectType -eq 'User' -and $_.DirSyncEnabled}
